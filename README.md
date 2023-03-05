@@ -41,3 +41,15 @@ The dataset file mentions the characteristic of the diamond and what all possibl
 One thing to note here is that for the *color* attribute, value can be either entered as a single value or it can be entered as a range. For example, I can mention color as just R or I can mention color as E-U meaning the color can be in range from E to U. For this purpose, besides making an entity for the single color value, we also made a regex expression stating the manner in which the range can be entered. 
 
 After the creation of entities, we made a parent intent by the name of *solve_query* which would inherit all possible variations in the query entered by the user. Every expression entered in this intent is mapped to the correct entity that it refers to. Once the model is correctly trained for that query, it will classify the query correctly for subsequent similar queries no matter the variations in the values present in the query. 
+
+#### Customizing the response from chatbot
+- Since our aim is to generate a filter for querying the diamonds, the filter must have exact values to search for in a database.
+- Consider the example : "Give me diamond in H to K range".
+    - Here the NLP will process and extract the parameter as "H to K"
+    - We need to devise a method which should give paramater as ['H', 'I', 'J', 'K']
+- Another example is "Give me a diaomond having approx 3 ct weight"
+    - Here the parameter extracted will be "approx 3 ct"
+    - We format it with our API and give output "carat weight: [2.85, 3.15]"
+- To have such conditional intelligence in our chatbot, we must either train a model that way (which we cannot because it's in hands of Dialogflow)  or implement a program.
+- We enabled Webhook which is basically an event driven API calling service, so we made an API in Flask which would take these parameters and beautify them and give them back to the chatbot.
+- So queries which are not discrete , are continuous and have range specified in the parameters, we need to format them and then give to the chatbot for good readability and future processing purposes.
