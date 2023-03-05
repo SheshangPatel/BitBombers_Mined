@@ -1,2 +1,2 @@
-# BitBombers_Mined
-We had used Google Dialogflow to build a conversational AI model that can understand natural language queries and generate filtering parameters
+# MINeD 2023 (BitBombers)
+We have made a conversational AI chatbot using Google-assisted NLP engine named Dialogflow to process natural language queries pertaining to different types of diamonds and thereby generating filtering parameters to segregate different diamond properties.
