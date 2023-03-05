@@ -50,6 +50,9 @@ After the creation of entities, we made a parent intent by the name of *solve_qu
 - Another example is "Show me diamonds having around 3 ct"
     - Here the parameter extracted will be "approx 3 ct"
     - We format it with our API and give output "carat weight: [2.85, 3.15]"
+
+![Chatbot 01](https://user-images.githubusercontent.com/75877929/222946228-c0ef6d7d-2de9-4325-9d45-77159a7d94a9.png)
+
 - To have such conditional intelligence in our chatbot, we must either train a model that way (which we cannot because it's in hands of Dialogflow)  or implement a program.
 - We enabled Webhook which is basically an event driven API calling service, so we made an API in Flask which would take these parameters and beautify them and give them back to the chatbot.
 - So queries which are not discrete , are continuous and have range specified in the parameters, we need to format them and then give to the chatbot for good readability and future processing purposes.
