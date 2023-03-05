@@ -44,10 +44,10 @@ After the creation of entities, we made a parent intent by the name of *solve_qu
 
 #### Customizing the response from chatbot
 - Since our aim is to generate a filter for querying the diamonds, the filter must have exact values to search for in a database.
-- Consider the example : "Give me diamond in H to K range".
+- Consider the example : "Give me diamond in H to K color range".
     - Here the NLP will process and extract the parameter as "H to K"
     - We need to devise a method which should give paramater as ['H', 'I', 'J', 'K']
-- Another example is "Show me diamonds having approx 3 ct weight"
+- Another example is "Show me diamonds having around 3 ct"
     - Here the parameter extracted will be "approx 3 ct"
     - We format it with our API and give output "carat weight: [2.85, 3.15]"
 - To have such conditional intelligence in our chatbot, we must either train a model that way (which we cannot because it's in hands of Dialogflow)  or implement a program.
