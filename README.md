@@ -15,9 +15,14 @@ Below is an image depicting all the different intents that we have created which
 
 ![Intent](https://user-images.githubusercontent.com/75877929/222944347-14e3e18f-a453-4162-91b5-fb15d7d77bb8.png)
 
+The intent named as *solve_query* is the intent which consists the user expressions having mixed attributes regarding the diamonds.
 
 #### What is an Entity?
 An entity can be regarded analogous to a python dictionary. A dictionary has a key and an associated value with it. Likewise, an entity has a reference variable and all possible synonyms that associate with that particular reference variable. So, whenever a user enters a query, the query has distinct characteristic values that essentially map to these entities and extract out the reference variable that they indicate. 
+
+Below is an image depicting all the different entities that we have used to parse a unique value to its correct reference value.
+
+![Entities](https://user-images.githubusercontent.com/75877929/222944433-9160f968-7130-4192-abb3-d38897eb5573.png)
 
 #### How are Intents and Entities linked to training a Natural Language Processing (NLP) model?
 Intents and entities are essentially parameters to an already pre-trained NLP model. When you add a user expression in a particular intent and specify what word maps to which entity, you are essentially passing a training data point to the NLP engine running in the backend. With every expression saved, the model trains itself with the incoming data point and makes prediction for future queries entered by the user. 
