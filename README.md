@@ -9,7 +9,13 @@ We have made a conversational AI chatbot using Google-assisted NLP engine named 
 ### What is Dialogflow?
 Dialogflow is a Google assisted NLP engine that essentially works like a chatbot by processing user queries and generating necessary outputs. This processing of user queries is done with the help of Intents and Entities.
 #### What is an Intent?
+
 An intent specifies all sorts of variations in which a user might enter a query. Besides this specification, there are methods that run in the backend that map each characteristic variable to a particular identifier known as an Entity.
+Below is an image depicting all the different intents that we have created which will process the query based on distinct properties of the diamonds.
+
+![Intent](https://user-images.githubusercontent.com/75877929/222944347-14e3e18f-a453-4162-91b5-fb15d7d77bb8.png)
+
+
 #### What is an Entity?
 An entity can be regarded analogous to a python dictionary. A dictionary has a key and an associated value with it. Likewise, an entity has a reference variable and all possible synonyms that associate with that particular reference variable. So, whenever a user enters a query, the query has distinct characteristic values that essentially map to these entities and extract out the reference variable that they indicate. 
 
