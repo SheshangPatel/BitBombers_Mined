@@ -22,7 +22,7 @@ def hook():
     for k, v in parameters.items():
         print(k,':', v)
 
-    #bhulna mat color range ko set dalna
+ 
     if len(parameters['color_value_range']) > 0:
         tem_colors = parameters['color_value']
         
