@@ -26,3 +26,6 @@ As accuracy was our chief concern, we planned on feeding the NLP engine with as 
 [Dataset Attributes and Mapped Values](https://colab.research.google.com/drive/1LCqzDfJQMhy82R0yYPhWbq8_Szua8XTf?usp=sharing)
 
 The dataset file mentions the characteristic of the diamond and what all possible values are assumed by the characteristic. The creation of entity was our first step because it is guaranteed that every characteristic property will always be matched to a unique element assigned in the entity of that characteristic.
+One thing to note here is that for the *color* attribute, value can be either entered as a single value or it can be entered as a range. For example, I can mention color as just R or I can mention color as E-U meaning the color can be in range from E to U.
+
+After the creation of entities, we made a parent intent by the name of *solve_query* which would inherit all possible variations in the query entered by the user. 
